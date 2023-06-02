@@ -1,0 +1,296 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+html{
+    background-color: black;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  figure {
+    margin: 20px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(230, 5, 5, 0.65);
+    -moz-box-shadow: 0px 10px 15px -5px rgba(230, 5, 5, 0.65);
+    box-shadow: 0px 10px 15px -5px rgba(230, 5, 5, 0.65);
+  }
+  img:hover {
+    transform: scale(1.2 ) rotate(10deg);
+  }
+
+  p {
+    margin-top: 10px;
+    font-family: 'Roboto Slab', serif;
+    color: red;
+  }
+  input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    background-color: rgb(189, 6, 6);
+    color: black;
+  }
+  h1{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 60px;
+    color: red;
+  }
+  .wrap{
+   width: 1100px;
+   margin: 20px auto;
+   display: flex;
+   justify-content: center;
+  }
+  @media screen and (max-width: 768px) {
+    .wrap {
+      width: 375px;
+      display: block;
+      flex-direction: column;
+    }
+  }
+  .tarjeta-wrap{
+    margin: 15% 2% 10% 2%;
+    -webkit-perspective: 800;
+    perspective: 800;
+  }
+  .tarjeta{
+    width: 460px;
+    height: 295px;
+    background:rgb(129, 121, 121);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+  -webkit-box-shadow: 0px 10px 15px -5px rgba(230, 5, 5, 0.65);
+  -moz-box-shadow: 0px 10px 15px -5px rgba(230, 5, 5, 0.65);
+  box-shadow: 0px 10px 15px -5px rgba(230, 5, 5, 0.65);
+  }
+  @media screen and (max-width: 768px) {
+    .tarjeta {
+      width: 355px;
+      display: block;
+      flex-direction: column;
+    }
+  }
+  .adelante, .atras{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .adelante{
+    width: 100%;
+  }
+  .atras{
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-family: "open sans";
+  }
+  .tarjeta-wrap:hover .tarjeta{
+    transform: rotateY(180deg);
+   
+  }
+  .card1{
+    background-image: url(img/ImperialDestroyer.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .card2{
+    background-image: url(img/SW2.jpg);
+    background-position: center;
+    background-color: black;
+  }
+  .card3{
+    background-image: url(img/EstrellaDeLaMuerte.jpg);
+    background-position: contain;
+  }
+  .texto{
+    color: black;
+    font-family: 'Roboto Slab', serif;
+  }
+
+  .wrap-about{
+    width: 1100px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+   }
+   @media screen and (max-width: 768px) {
+    .wrap-about {
+      width: 365px;
+      display: block;
+      flex-direction: column;
+    }
+  }
+ 
+   .tarjeta-wrap-about{
+     margin: 15% 2% 10% 2%;
+     -webkit-perspective: 800;
+     perspective: 800;
+   }
+   .tarjeta-about{
+     width: 450px;
+     height: 695px;
+     background:rgb(129, 121, 121);
+     position: relative;
+     transform-style: preserve-3d;
+     transition: .7s ease;
+   -webkit-box-shadow: 0px 10px 15px -5px rgba(230, 5, 5, 0.65);
+   -moz-box-shadow: 0px 10px 15px -5px rgba(230, 5, 5, 0.65);
+   box-shadow: 0px 10px 15px -5px rgba(230, 5, 5, 0.65);
+   }
+   @media screen and (max-width: 768px) {
+    .tarjeta-about {
+      width: 345px;
+      display: block;
+      flex-direction: column;
+    }
+  }
+   .adelante-about, .atras-about{
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+   }
+   .adelante-about{
+     width: 100%;
+   }
+   .atras-about{
+     transform: rotateY(180deg);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     color: #fff;
+     font-family: "open sans";
+   }
+   .tarjeta-wrap-about:hover .tarjeta-about{
+     transform: rotateY(180deg);
+    
+   }
+   .card1-about{
+     background-image: url(img/StarWarsEpisodio1-laAmenazafantasma.jpg);
+     background-size: cover;
+     background-position: center;
+   }
+   .card2-about{
+     background-image: url(img/EpisodioII.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-color: black;
+   }
+   .card3-about{
+     background-image: url(img/EpisodeIII.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+   }
+   .card4-about{
+    background-image: url(img/EpisodioIV.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .card5-about{
+    background-image: url(img/EpisodioV.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .card6-about{
+    background-image: url(img/EpisodioVII.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .card7-about{
+    background-image: url(img/Episodio7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .card8-about{
+    background-image: url(img/EpisodioVIII.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .card9-about{
+    background-image: url(img/FinalZaga2.jpg);
+    background-position: center ;
+    background-repeat: no-repeat;
+  }
+   .texto-about{
+    color: black;
+    font-size: medium;
+    font-family: 'Roboto Slab', serif;
+   }
+   @media screen and (max-width: 768px){
+    .texto-about{
+      font-size: smaller;
+    }
+   }
+
+
+
+
+.navegacion{
+  background-color: red;
+    width: 100%;
+    height: 15vh;
+}
+      
+.navegacion_contenedor{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  font-size: x-large;
+  text-transform: uppercase;
+  color: white;
+}
+a{
+  color:black;
+  font-weight: 700;
+  text-decoration: none;
+
+}
+
+@media screen and (max-width: 768px) {
+  .navegacion_contenedor {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px){
+  a{
+    color:black;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: large;
+  }
+}
