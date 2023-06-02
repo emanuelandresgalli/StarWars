@@ -134,6 +134,12 @@ main {
     color: black;
     font-family: 'Roboto Slab', serif;
   }
+  @media screen and (max-width: 768px){
+    .texto{
+      font-size: smaller;
+      font-family: 'Roboto Slab', serif;
+    }
+   }
 
   .wrap-about{
     width: 1100px;
